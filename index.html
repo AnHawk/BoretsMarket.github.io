@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Borets Market</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="category.html?category=Чоловікам">Чоловікам</a>
+            <a href="category.html?category=Дівчатам">Дівчатам</a>
+        </nav>
+        <div class="logo">BORETS MARKET</div>
+        <nav class="nav">
+            <a href="category.html?category=Дітям">Дітям</a>
+            <a href="category.html?category=Аксесуари">Аксесуари</a>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="menu" id="menu">
+            <a href="#">Чоловікам</a>
+            <a href="#">Дівчатам</a>
+            <a href="#">Дітям</a>
+            <a href="#">Аксесуари</a>
+        </div>
+    </header>
+    <div class="photo-grid">
+        <div class="photo-large">
+            <img src="products img/NOVA_MOBILE_BANNER.webp" alt="Большая фотография">
+            <div class="photo-info">
+                <h3>Кимоно</h3>
+                <a href="category.html?category=Чоловікам">Чоловікам</a>
+                <a href="category.html?category=Дівчатам">Дівчатам</a>
+                <a href="category.html?category=Дітям">Дітям</a>
+            </div>
+        </div>
+        <div class="photo-column">
+            <div class="photo-small">
+                <img src="products img/photo_5330153241989737316_x.jpg" alt="Маленькая фотография 1">
+                <div class="photo-info">
+                    <h3>Ноу-гі</h3>
+                    <a href="#">Категория</a>
+                </div>
+            </div>
+            <div class="photo-small">
+                <img src="products img/photo_5330153241989737316_x.jpg" alt="Маленькая фотография 2">
+                <div class="photo-info">
+                    <h3>Аксесуари</h3>
+                    <a href="#">Категория</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>

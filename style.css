@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: "Roboto", serif;
+    background-color: #0d121e;
+    color: #f2f5f7;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2432;
+    padding: 30px 30px;
+}
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 30px;
+    cursor: pointer;
+}
+.nav {
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    text-decoration: none;
+    color: #f2f5f7;
+    font-weight: 700;
+    font-size: 14px;
+}
+.menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #1f2432;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+}
+.menu a {
+    display: block;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product-card {
+    background: #1f2432;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.product-card p {
+    margin: 5px 0;
+}
+
+
+.photo-grid {
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.photo-large, .photo-small {
+    position: relative;
+}
+
+.photo-large {
+    flex: 2;
+}
+
+.photo-large img, .photo-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.photo-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.photo-small {
+    position: relative;
+    flex: 1;
+}
+
+.photo-info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.photo-info h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.photo-info a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .header {
+        justify-content: space-between;
+        padding: 15px 15px;
+    }
+}
