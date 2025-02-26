@@ -12,20 +12,73 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="category.html?category=Чоловікам">Чоловікам</a>
-            <a href="category.html?category=Дівчатам">Дівчатам</a>
+            <div class="dropdown">
+                <a href="category.html?category=Чоловікам">Чоловікам</a>
+                <div class="dropdown-menu">
+                    <a href="category.html?category=Кімоно">Кімоно</a>
+                    <a href="category.html?category=Ноу-гі">Ноу-гі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="category.html?category=Дівчатам">Дівчатам</a>
+                <div class="dropdown-menu">
+                    <a href="category.html?category=Кімоно">Кімоно</a>
+                    <a href="category.html?category=Ноу-гі">Ноу-гі</a>
+                </div>
+            </div>
         </nav>
-        <div class="logo"><a href="index.html">BORETS MARKET</a></div>
+        
+        <div class="logo"><a href="/index.html">BORETS MARKET</a></div>
+        
         <nav class="nav">
-            <a href="category.html?category=Дітям">Дітям</a>
-            <a href="category.html?category=Аксесуари">Аксесуари</a>
+            <div class="dropdown">
+                <a href="category.html?category=Дітям">Дітям</a>
+                <div class="dropdown-menu">
+                    <a href="category.html?category=Кімоно">Кімоно</a>
+                    <a href="category.html?category=Ноу-гі">Ноу-гі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="category.html?category=Аксесуари">Аксесуари</a>
+                <div class="dropdown-menu">
+                    <a href="category.html?category=Рюкзаки">Рюкзаки</a>
+                    <a href="category.html?category=Годинники">Годинники</a>
+                    <a href="category.html?category=Окуляри">Окуляри</a>
+                </div>
+            </div>
         </nav>
+    
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <div class="menu" id="menu">
-            <a href="#">Чоловікам</a>
-            <a href="#">Дівчатам</a>
-            <a href="#">Дітям</a>
-            <a href="#">Аксесуари</a>
+            <div class="dropdown">
+                <a href="category.html?category=Чоловікам" onclick="toggleDropdown(event)">Чоловікам</a>
+                <div class="dropdown-menu">
+                    <a href="category.html?category=Кімоно">Кімоно</a>
+                    <a href="category.html?category=Ноу-гі">Ноу-гі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="category.html?category=Дівчатам" onclick="toggleDropdown(event)">Дівчатам</a>
+                <div class="dropdown-menu">
+                    <a href="category.html?category=Кімоно">Кімоно</a>
+                    <a href="category.html?category=Ноу-гі">Ноу-гі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="category.html?category=Дівчатам" onclick="toggleDropdown(event)">Дітям</a>
+                <div class="dropdown-menu">
+                    <a href="category.html?category=Кімоно">Кімоно</a>
+                    <a href="category.html?category=Ноу-гі">Ноу-гі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="category.html?category=Аксесуари" onclick="toggleDropdown(event)">Аксесуари</a>
+                <div class="dropdown-menu">
+                    <a href="category.html?category=Легінси">Легінси</a>
+                    <a href="category.html?category=Сукні">Сукні</a>
+                    <a href="category.html?category=Куртки">Куртки</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -33,5 +86,6 @@
     <div class="products-container" id="products"></div>
 
     <script src="category.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
