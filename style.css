@@ -58,6 +58,7 @@ a{
 
 .dropdown {
     position: relative;
+    padding: 5px;
 }
 
 .dropdown-menu {
@@ -272,7 +273,7 @@ a{
 
 .menu .dropdown-menu a {
     color: #f2f5f7;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Адаптив */
