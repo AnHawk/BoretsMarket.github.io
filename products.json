@@ -112,10 +112,17 @@
     "subcategory": "Кімоно"
   },
   {
-      "image": "product2.jpg",
-      "name": "Рашгард",
-      "price": "₴1200",
+      "image": "products img/kidsNoGi/IMG_0240.webp",
+      "name": "Kids Recharge Rash Guard - Black",
+      "price": "₴1350",
       "category": "Дітям",
       "subcategory": "Ноу-гі"
+  },
+  {
+    "image": "products img/kidsNoGi/IMG_0255.webp",
+    "name": "Kids Recharge Grappling Shorts - Black",
+    "price": "₴1350",
+    "category": "Дітям",
+    "subcategory": "Ноу-гі"
   }
 ]
