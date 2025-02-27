@@ -1,12 +1,15 @@
-// Функция для получения параметра из URL
-function getCategoryFromUrl() {
+// Функция для получения параметров из URL
+function getParamsFromUrl() {
     const params = new URLSearchParams(window.location.search);
-    return params.get('category'); // Получаем название категории
+    return {
+        category: params.get('category'),
+        subcategory: params.get('subcategory')
+    };
 }
 
 async function loadCategoryProducts() {
-    const category = getCategoryFromUrl();
-    document.getElementById("category-title").textContent = category;
+    const { category, subcategory } = getParamsFromUrl();
+    document.getElementById("category-title").textContent = category + (subcategory ? " - " + subcategory : "");
 
     try {
         const response = await fetch('products.json');
@@ -15,7 +18,10 @@ async function loadCategoryProducts() {
 
         container.innerHTML = '';
 
-        const filteredProducts = products.filter(product => product.category === category);
+        // Фильтруем товары по категории и подкатегории (если указана)
+        const filteredProducts = products.filter(product => 
+            product.category === category && (!subcategory || product.subcategory === subcategory)
+        );
 
         if (filteredProducts.length === 0) {
             container.innerHTML = '<p>Товарів в цій категорії поки що немає.</p>';
@@ -29,7 +35,7 @@ async function loadCategoryProducts() {
                 <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
                 <p><strong>Ціна:</strong> ${product.price}</p>
-                <button>Замовити</button>
+                <button class="btn">Замовити</button>
             `;
             container.appendChild(card);
         });

@@ -1,15 +1,16 @@
 [
-    {
+  {
       "image": "products img/photo_5330153241989737316_x.jpg",
       "name": "Academy Gi - Black",
       "price": "₴3500",
-      "category": "Чоловікам"
-    },
-    {
+      "category": "Чоловікам",
+      "subcategory": "Кімоно"
+  },
+  {
       "image": "product2.jpg",
       "name": "Рашгард",
       "price": "₴1200",
-      "category": "Дітям"
-    }
-  ]
-  
+      "category": "Дітям",
+      "subcategory": "Ноу-гі"
+  }
+]
